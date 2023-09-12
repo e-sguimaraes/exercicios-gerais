@@ -1,0 +1,4 @@
+Resultados/Eduardo/completo/aluno.c: In function ‘comparar_matricula_aluno’:
+Resultados/Eduardo/completo/aluno.c:19:1: warning: control reaches end of non-void function [-Wreturn-type]
+   19 | }
+      | ^
