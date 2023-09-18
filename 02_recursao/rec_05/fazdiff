@@ -1,0 +1,11 @@
+./prog < input/test_1.txt > outProg/test_1.txt
+./prog < input/test_2.txt > outProg/test_2.txt
+./prog < input/test_3.txt > outProg/test_3.txt
+./prog < input/test_4.txt > outProg/test_4.txt
+./prog < input/test_5.txt > outProg/test_5.txt
+./prog < input/test_6.txt > outProg/test_6.txt
+./prog < input/test_7.txt > outProg/test_7.txt
+./prog < input/test_8.txt > outProg/test_8.txt
+./prog < input/test_9.txt > outProg/test_9.txt
+./prog < input/test_10.txt > outProg/test_10.txt
+diff output outProg
