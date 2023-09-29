@@ -1,0 +1,2 @@
+Test Case: Resultados/Eduardo/completo/Casos/3
+Valgrind result: allocs: 2 frees: 0 errors: 0 contexts: 0

@@ -11,10 +11,19 @@ void matrix_read(int rows, int cols, int matrix[rows][cols]) {
 
 void matrix_print(int rows, int cols, int matrix[rows][cols]) {
     for(int i = 0; i < rows; i++) {
+        printf("|");
         for(int j = 0; j < cols; j++) {
             printf("%d", matrix[i][j]);
+            if(j == cols - 1) {
+                printf("|");
+            }
+            else {
+                printf(" ");
+            }
         }
+        printf("\n");
     }
+    printf("\n");
 }
 
 int possible_matrix_sum(int rows1, int cols1, int rows2, int cols2) {
@@ -32,7 +41,7 @@ return cols1 == rows2;
 void matrix_add(int rows1, int cols1, int matrix1[rows1][cols1], int rows2, int cols2, int matrix2[rows2][cols2], int result[rows1][cols1]) {
     for(int i = 0; i < rows1; i++) {
         for(int j = 0; j < cols1; j++) {
-            matrix1[i][j] += matrix2[i][j];
+            result[i][j] = matrix1[i][j] + matrix2[i][j];
         }
     }    
 }
@@ -40,7 +49,7 @@ void matrix_add(int rows1, int cols1, int matrix1[rows1][cols1], int rows2, int 
 void matrix_sub(int rows1, int cols1, int matrix1[rows1][cols1], int rows2, int cols2, int matrix2[rows2][cols2], int result[rows1][cols1]) {
     for(int i = 0; i < rows1; i++) {
         for(int j = 0; j < cols1; j++) {
-            matrix1[i][j] -= matrix2[i][j];
+            result[i][j] = matrix1[i][j] - matrix2[i][j];
         }
     }    
 }
