@@ -1,0 +1,26 @@
+==48566== Memcheck, a memory error detector
+==48566== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==48566== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==48566== Command: Resultados/Eduardo/string_utils/prog Resultados/Eduardo/string_utils/Casos/1
+==48566== Parent PID: 48565
+==48566== 
+==48566== 
+==48566== Process terminating with default action of signal 15 (SIGTERM)
+==48566==    at 0x1094F1: string_upper (in /home/eduardo/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Eduardo/string_utils/prog)
+==48566==    by 0x109382: main (in /home/eduardo/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Eduardo/string_utils/prog)
+==48566== 
+==48566== HEAP SUMMARY:
+==48566==     in use at exit: 8,192 bytes in 2 blocks
+==48566==   total heap usage: 2 allocs, 0 frees, 8,192 bytes allocated
+==48566== 
+==48566== LEAK SUMMARY:
+==48566==    definitely lost: 0 bytes in 0 blocks
+==48566==    indirectly lost: 0 bytes in 0 blocks
+==48566==      possibly lost: 0 bytes in 0 blocks
+==48566==    still reachable: 8,192 bytes in 2 blocks
+==48566==         suppressed: 0 bytes in 0 blocks
+==48566== Reachable blocks (those to which a pointer was found) are not shown.
+==48566== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==48566== 
+==48566== For lists of detected and suppressed errors, rerun with: -s
+==48566== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

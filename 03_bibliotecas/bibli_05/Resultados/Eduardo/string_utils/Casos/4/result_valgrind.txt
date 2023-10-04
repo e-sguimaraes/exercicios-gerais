@@ -1,0 +1,45 @@
+==49003== Memcheck, a memory error detector
+==49003== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==49003== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==49003== Command: Resultados/Eduardo/string_utils/prog Resultados/Eduardo/string_utils/Casos/4
+==49003== Parent PID: 49002
+==49003== 
+==49003== Invalid read of size 1
+==49003==    at 0x4853334: strchrnul (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==49003==    by 0x48DF161: __find_specmb (printf-parse.h:111)
+==49003==    by 0x48DF161: __vfprintf_internal (vfprintf-internal.c:1255)
+==49003==    by 0x48CA81E: printf (printf.c:33)
+==49003==    by 0x109625: string_reverse (in /home/eduardo/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Eduardo/string_utils/prog)
+==49003==    by 0x1093F8: main (in /home/eduardo/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Eduardo/string_utils/prog)
+==49003==  Address 0x74 is not stack'd, malloc'd or (recently) free'd
+==49003== 
+==49003== 
+==49003== Process terminating with default action of signal 11 (SIGSEGV)
+==49003==  Access not within mapped region at address 0x74
+==49003==    at 0x4853334: strchrnul (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==49003==    by 0x48DF161: __find_specmb (printf-parse.h:111)
+==49003==    by 0x48DF161: __vfprintf_internal (vfprintf-internal.c:1255)
+==49003==    by 0x48CA81E: printf (printf.c:33)
+==49003==    by 0x109625: string_reverse (in /home/eduardo/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Eduardo/string_utils/prog)
+==49003==    by 0x1093F8: main (in /home/eduardo/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Eduardo/string_utils/prog)
+==49003==  If you believe this happened as a result of a stack
+==49003==  overflow in your program's main thread (unlikely but
+==49003==  possible), you can try to increase the size of the
+==49003==  main thread stack using the --main-stacksize= flag.
+==49003==  The main thread stack size used in this run was 8388608.
+==49003== 
+==49003== HEAP SUMMARY:
+==49003==     in use at exit: 8,192 bytes in 2 blocks
+==49003==   total heap usage: 2 allocs, 0 frees, 8,192 bytes allocated
+==49003== 
+==49003== LEAK SUMMARY:
+==49003==    definitely lost: 0 bytes in 0 blocks
+==49003==    indirectly lost: 0 bytes in 0 blocks
+==49003==      possibly lost: 0 bytes in 0 blocks
+==49003==    still reachable: 8,192 bytes in 2 blocks
+==49003==         suppressed: 0 bytes in 0 blocks
+==49003== Reachable blocks (those to which a pointer was found) are not shown.
+==49003== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==49003== 
+==49003== For lists of detected and suppressed errors, rerun with: -s
+==49003== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

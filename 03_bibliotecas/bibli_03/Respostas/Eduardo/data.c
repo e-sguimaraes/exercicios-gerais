@@ -70,19 +70,19 @@ void imprimeMesExtenso(int mes) {
 }
 
 void imprimeDataExtenso(int dia, int mes, int ano) {
-    printf("%d de ", dia);
+    printf("%02d de ", dia);
     imprimeMesExtenso(mes);
     printf(" de %d\n", ano);
 }
 
 int verificaBissexto(int ano) {
-return !ano%4;
+return (ano%4 == 0 && ano%100 != 0) || ano%400 == 0;
 }
 
 int numeroDiasMes(int mes, int ano) {
     if(mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12) return 31;
     if(mes == 4 || mes == 6 || mes == 9 || mes == 11) return 30;
-    if(verificaBissexto) return 29;
+    if(verificaBissexto(ano)) return 29;
 return 28;
 }
 
@@ -104,7 +104,7 @@ int calculaDiferencaDias(int dia1, int mes1, int ano1, int dia2, int mes2, int a
     int i = 0;
     if(comparaData(dia1, mes1, ano1, dia2, mes2, ano2) != -1) {
         while(ano1 != ano2 || mes1 != mes2 || dia1 != dia2) {
-            if(numeroDiasMes(mes2, ano2) == dia2 - 1) {
+            if(numeroDiasMes(mes2, ano2) + 1 == dia2) {
                 mes2++;
                 dia2 = 1;
                 if(mes2 == 13) {
@@ -120,7 +120,7 @@ int calculaDiferencaDias(int dia1, int mes1, int ano1, int dia2, int mes2, int a
         }
     } else {
         while(ano1 != ano2 || mes1 != mes2 || dia1 != dia2) {
-            if(numeroDiasMes(mes1, ano1) == dia1 - 1) {
+            if(numeroDiasMes(mes1, ano1) + 1 == dia1) {
                 mes1++;
                 dia1 = 1;
                 if(mes1 == 13) {
@@ -135,4 +135,5 @@ int calculaDiferencaDias(int dia1, int mes1, int ano1, int dia2, int mes2, int a
             i++;
         }
     }
+return i;
 }

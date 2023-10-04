@@ -1,0 +1,15 @@
+==42271== Memcheck, a memory error detector
+==42271== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==42271== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==42271== Command: Resultados/Eduardo/data/prog Resultados/Eduardo/data/Casos/1
+==42271== Parent PID: 42270
+==42271== 
+==42271== 
+==42271== HEAP SUMMARY:
+==42271==     in use at exit: 0 bytes in 0 blocks
+==42271==   total heap usage: 2 allocs, 2 frees, 8,192 bytes allocated
+==42271== 
+==42271== All heap blocks were freed -- no leaks are possible
+==42271== 
+==42271== For lists of detected and suppressed errors, rerun with: -s
+==42271== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

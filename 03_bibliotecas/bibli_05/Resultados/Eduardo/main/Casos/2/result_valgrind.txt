@@ -1,0 +1,45 @@
+==47961== Memcheck, a memory error detector
+==47961== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==47961== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==47961== Command: Resultados/Eduardo/main/prog Resultados/Eduardo/main/Casos/2
+==47961== Parent PID: 47960
+==47961== 
+==47961== Conditional jump or move depends on uninitialised value(s)
+==47961==    at 0x10922A: main (in /home/eduardo/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Eduardo/main/prog)
+==47961==  Uninitialised value was created by a stack allocation
+==47961==    at 0x1091B1: main (in /home/eduardo/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Eduardo/main/prog)
+==47961== 
+==47961== Use of uninitialised value of size 8
+==47961==    at 0x109241: main (in /home/eduardo/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Eduardo/main/prog)
+==47961==  Uninitialised value was created by a stack allocation
+==47961==    at 0x1091B1: main (in /home/eduardo/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Eduardo/main/prog)
+==47961== 
+==47961== 
+==47961== Process terminating with default action of signal 15 (SIGTERM)
+==47961==    at 0x497EA35: write (write.c:26)
+==47961==    by 0x48F4F6C: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1180)
+==47961==    by 0x48F6A60: new_do_write (fileops.c:448)
+==47961==    by 0x48F6A60: _IO_new_do_write (fileops.c:425)
+==47961==    by 0x48F6A60: _IO_do_write@@GLIBC_2.2.5 (fileops.c:422)
+==47961==    by 0x48F5754: _IO_new_file_xsputn (fileops.c:1243)
+==47961==    by 0x48F5754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+==47961==    by 0x48DF1CC: outstring_func (vfprintf-internal.c:239)
+==47961==    by 0x48DF1CC: __vfprintf_internal (vfprintf-internal.c:1263)
+==47961==    by 0x48CA81E: printf (printf.c:33)
+==47961==    by 0x109363: main (in /home/eduardo/exercicios-gerais/03_bibliotecas/bibli_05/Resultados/Eduardo/main/prog)
+==47961== 
+==47961== HEAP SUMMARY:
+==47961==     in use at exit: 8,192 bytes in 2 blocks
+==47961==   total heap usage: 2 allocs, 0 frees, 8,192 bytes allocated
+==47961== 
+==47961== LEAK SUMMARY:
+==47961==    definitely lost: 0 bytes in 0 blocks
+==47961==    indirectly lost: 0 bytes in 0 blocks
+==47961==      possibly lost: 0 bytes in 0 blocks
+==47961==    still reachable: 8,192 bytes in 2 blocks
+==47961==         suppressed: 0 bytes in 0 blocks
+==47961== Reachable blocks (those to which a pointer was found) are not shown.
+==47961== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==47961== 
+==47961== For lists of detected and suppressed errors, rerun with: -s
+==47961== ERROR SUMMARY: 601624 errors from 2 contexts (suppressed: 0 from 0)

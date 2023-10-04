@@ -1,0 +1,16 @@
+Resultados/Eduardo/string_utils/string_utils.c: In function ‘string_reverse’:
+Resultados/Eduardo/string_utils/string_utils.c:37:5: warning: statement with no effect [-Wunused-value]
+   37 |     for(i; i >= 0; i--) {
+      |     ^~~
+Resultados/Eduardo/string_utils/string_utils.c:38:19: warning: passing argument 1 of ‘printf’ makes pointer from integer without a cast [-Wint-conversion]
+   38 |         printf(str[i]);
+      |                ~~~^~~
+      |                   |
+      |                   char
+In file included from Resultados/Eduardo/string_utils/string_utils.c:1:
+/usr/include/stdio.h:356:43: note: expected ‘const char * restrict’ but argument is of type ‘char’
+  356 | extern int printf (const char *__restrict __format, ...);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+Resultados/Eduardo/string_utils/string_utils.c:38:9: warning: format not a string literal and no format arguments [-Wformat-security]
+   38 |         printf(str[i]);
+      |         ^~~~~~
