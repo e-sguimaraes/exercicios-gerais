@@ -6,7 +6,7 @@ int main() {
     int rows1, cols1, rows2, cols2, operation, chosenMatrix, scalar;
 
     scanf("%d %d", &rows1, &cols1);
-    int matrix1[rows1][cols1], result[rows1][cols1], transpose1[cols1][rows1];
+    int matrix1[rows1][cols1], transpose1[cols1][rows1];
     matrix_read(rows1, cols1, matrix1);
     scanf("%d %d", &rows2, &cols2);
     int matrix2[rows2][cols2], transpose2[cols2][rows2];
@@ -27,22 +27,31 @@ int main() {
         switch(operation) {
             case 1:
                 if(possible_matrix_sum(rows1, cols1, rows2, cols2)) {
+                    int result[rows1][cols1];
                     matrix_add(rows1, cols1, matrix1, rows2, cols2, matrix2, result);
                     matrix_print(rows1, cols1, result);
+                } else {
+                    printf("Erro: as dimensoes da matriz nao correspondem\n\n");
                 }
                 break;
 
             case 2:
                 if(possible_matrix_sub(rows1, cols1, rows2, cols2)) {
+                    int result[rows1][cols1];
                     matrix_sub(rows1, cols1, matrix1, rows2, cols2, matrix2, result);
                     matrix_print(rows1, cols1, result);
+                } else {
+                    printf("Erro: as dimensoes da matriz nao correspondem\n\n");
                 }
                 break;
 
             case 3:
                 if(possible_matrix_multiply(cols1, rows2)) {
+                    int result[rows1][cols2];
                     matrix_multiply(rows1, cols1, matrix1, rows2, cols2, matrix2, result);
-                    matrix_print(rows1, cols1, result);
+                    matrix_print(rows1, cols2, result);
+                } else {
+                    printf("Erro: o numero de colunas da primeira matriz eh diferente do numero de linhas da segunda matriz\n\n");
                 }
                 break;
 
@@ -59,7 +68,6 @@ int main() {
                 break;
 
             case 5:
-                scanf("%d", &chosenMatrix);
                 transpose_matrix(rows1, cols1, matrix1, transpose1);
                 matrix_print(cols1, rows1, transpose1);
                 transpose_matrix(rows2, cols2, matrix2, transpose2);

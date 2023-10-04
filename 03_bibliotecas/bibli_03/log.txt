@@ -1,0 +1,165 @@
+Rodando o script do Aluno - Arquivos header necessários do professor existem na pasta Includes
+ - Arquivos objetos necessários do professor existem na pasta Gabarito-obj.
+#######################################
+ALUNO: Eduardo
+#######################################
+CRIANDO O DIRETÓRIO DE RESULTADO PARA Eduardo:
+ - Diretório Resultados/Eduardo criado com sucesso!
+ - Diretório Resultados/Eduardo/data criado com sucesso!
+ - Diretório Resultados/Eduardo/main criado com sucesso!
+ - Diretório Resultados/Eduardo/completo criado com sucesso!
+ - Arquivos criados: ok!
+
+CHECKANDO OS ARQUIVOS DO ALUNO:
+ - Arquivo esperado 'Respostas/Eduardo/data.c' encontrado!
+ - Arquivo esperado 'Respostas/Eduardo/data.h' encontrado!
+ - Arquivo esperado 'Respostas/Eduardo/main.c' encontrado!
+ - Arquivos esperados enviados: Ok!
+
+COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
+ - Pasta data:
+ - Copiando os Casos de teste para a pasta Resultados/Eduardo/data
+ - Copiando os 'Respostas/Eduardo/*.h' do aluno para a pasta Resultados/Eduardo/data
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/Eduardo/data
+ - Copiando os 'Respostas/Eduardo/*.c' do aluno para a pasta Resultados/Eduardo/data
+ - Pasta main:
+ - Copiando os Casos de teste para a pasta Resultados/Eduardo/main
+ - Copiando os 'Respostas/Eduardo/*.h' do aluno para a pasta Resultados/Eduardo/main
+ - Copiando os 'Includes/*.h' do professor para a pasta Resultados/Eduardo/main
+ - Copiando os 'Respostas/Eduardo/*.c' do aluno para a pasta Resultados/Eduardo/main
+ - Pasta completo:
+ - Copiando os Casos de teste para a pasta Resultados/Eduardo/completo
+ - Copiando os 'Respostas/Eduardo/*.h' do aluno para a pasta Resultados/Eduardo/completo
+ - Copiando os 'Respostas/Eduardo/*.c' do aluno para a pasta Resultados/Eduardo/completo
+ - Arquivos copiados: ok!
+
+COMPILANDO OS ARQUIVOS NA PASTA DE RESULTADO DO ALUNO:
+ - Pasta data:
+ - Compilando o arquivo data.c do aluno, gerando o data.o
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Arquivo de output gerado: Resultados/Eduardo/data/result_compilation.txt.
+ - Pasta main:
+ - Compilando o arquivo data.c do aluno, gerando o data.o
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Arquivo de output gerado: Resultados/Eduardo/main/result_compilation.txt.
+ - Pasta completo:
+ - Compilando o arquivo data.c do aluno, gerando o data.o
+ - Compilando o arquivo main.c do aluno, gerando o main.o
+ - Arquivo de output gerado: Resultados/Eduardo/completo/result_compilation.txt.
+ - Copiando os arquivos objetos do professor para cada subpasta do Resultado do Eduardo:
+ - Copiando o Gabarito-obj/data.o para a pasta Resultados/Eduardo/main
+ - Copiando o Gabarito-obj/main.o para a pasta Resultados/Eduardo/data
+ - Arquivos Compilados: ok!
+
+LINKANDO OS ARQUIVOS COMPILADOS:
+ - Pasta data:
+ - Gerando o binário prog linkando com o(s) arquivo(s) data/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Eduardo/data/result_linking.txt
+ - Pasta main:
+ - Gerando o binário prog linkando com o(s) arquivo(s) main/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Eduardo/main/result_linking.txt
+ - Pasta completo:
+ - Gerando o binário prog linkando com o(s) arquivo(s) completo/*.o
+ - Arquivos Linkados: Ok! Binário prog gerado com sucesso.
+ - Arquivo de output gerado: Resultados/Eduardo/completo/result_linking.txt
+
+EXECUTANDO O VALGRIND EM CADA CASO:
+ - Pasta data / Caso 1:
+ - Arquivo de output gerado: Resultados/Eduardo/data/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta data / Caso 2:
+ - Arquivo de output gerado: Resultados/Eduardo/data/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta data / Caso 3:
+ - Arquivo de output gerado: Resultados/Eduardo/data/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta data / Caso 4:
+ - Arquivo de output gerado: Resultados/Eduardo/data/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta data / Caso 5:
+ - Arquivo de output gerado: Resultados/Eduardo/data/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta data / Caso 6:
+ - Arquivo de output gerado: Resultados/Eduardo/data/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta main / Caso 1:
+ - Arquivo de output gerado: Resultados/Eduardo/main/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 2:
+ - Arquivo de output gerado: Resultados/Eduardo/main/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 3:
+ - Arquivo de output gerado: Resultados/Eduardo/main/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 4:
+ - Arquivo de output gerado: Resultados/Eduardo/main/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 5:
+ - Arquivo de output gerado: Resultados/Eduardo/main/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta main / Caso 6:
+ - Arquivo de output gerado: Resultados/Eduardo/main/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta completo / Caso 1:
+ - Arquivo de output gerado: Resultados/Eduardo/completo/Casos/1/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta completo / Caso 2:
+ - Arquivo de output gerado: Resultados/Eduardo/completo/Casos/2/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
+ - Pasta completo / Caso 3:
+ - Arquivo de output gerado: Resultados/Eduardo/completo/Casos/3/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta completo / Caso 4:
+ - Arquivo de output gerado: Resultados/Eduardo/completo/Casos/4/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta completo / Caso 5:
+ - Arquivo de output gerado: Resultados/Eduardo/completo/Casos/5/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+ - Pasta completo / Caso 6:
+ - Arquivo de output gerado: Resultados/Eduardo/completo/Casos/6/result_valgrind.txt.
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Incorreto!
+
+#######################################
+RESULTADOS FINAIS
+#######################################
+
+----------------------------------------------------------------------------
+Nome 0: Eduardo
+ - Arquivos Corretos: 3 de 3 / Nota 10.00
+ - Compilações Corretas: 6 de 6 / Nota 10.00
+ - Linkagens Corretas: 3 de 3 / Nota 10.00
+ - Resultados Corretos data: 1 de 6 / Nota 1.66
+ - Valgrinds Corretos data: 6 de 6 / Nota 10.00
+ - Resultados Corretos main: 6 de 6 / Nota 10.00
+ - Valgrinds Corretos main: 6 de 6 / Nota 10.00
+ - Resultados Corretos completo: 1 de 6 / Nota 1.66
+ - Valgrinds Corretos completo: 6 de 6 / Nota 10.00
+ - Soma das notas do Eduardo: 73.320
+ - Campos Considerados: 9
+ - Média do Eduardo: 8.14
+
+----------------------------------------------------------------------------
+
+Arquivo CSV Resultado.csv com os resultados finais foi gerado na pasta raíz!
+
+

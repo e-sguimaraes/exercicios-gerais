@@ -58,3 +58,13 @@ Opcao escolhida:
 5 - Transposta de uma matriz
 6 - Encerrar o programa
 Opcao escolhida:
+|3 6|
+|19 20|
+
+1 - Somar matrizes
+2 - Subtrair matrizes
+3 - Multiplicar matrizes
+4 - Multiplicacao de uma matriz por escalar
+5 - Transposta de uma matriz
+6 - Encerrar o programa
+Opcao escolhida:

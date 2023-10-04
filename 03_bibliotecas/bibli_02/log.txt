@@ -69,15 +69,15 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta main / Caso 1:
  - Arquivo de output gerado: Resultados/Eduardo/main/Casos/1/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta main / Caso 2:
  - Arquivo de output gerado: Resultados/Eduardo/main/Casos/2/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 10.
- - Resultado para o saida.txt: Incorreto!
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
  - Pasta main / Caso 3:
  - Arquivo de output gerado: Resultados/Eduardo/main/Casos/3/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
  - Pasta matrix_utils / Caso 1:
  - Arquivo de output gerado: Resultados/Eduardo/matrix_utils/Casos/1/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
@@ -93,15 +93,15 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta completo / Caso 1:
  - Arquivo de output gerado: Resultados/Eduardo/completo/Casos/1/result_valgrind.txt.
  - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 2:
  - Arquivo de output gerado: Resultados/Eduardo/completo/Casos/2/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 2, errors: 10.
- - Resultado para o saida.txt: Incorreto!
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
  - Pasta completo / Caso 3:
  - Arquivo de output gerado: Resultados/Eduardo/completo/Casos/3/result_valgrind.txt.
- - Valgrind: Incorreto! allocs: 2, frees: 0, errors: 0.
- - Resultado para o saida.txt: Incorreto!
+ - Valgrind: Ok! allocs: 2, frees: 2, errors: 0.
+ - Resultado para o saida.txt: Ok!
 
 #######################################
 RESULTADOS FINAIS
@@ -112,15 +112,15 @@ Nome 0: Eduardo
  - Arquivos Corretos: 3 de 3 / Nota 10.00
  - Compilações Corretas: 6 de 6 / Nota 10.00
  - Linkagens Corretas: 3 de 3 / Nota 10.00
- - Resultados Corretos main: 0 de 3 / Nota 0.00
- - Valgrinds Corretos main: 1 de 3 / Nota 3.33
+ - Resultados Corretos main: 3 de 3 / Nota 10.00
+ - Valgrinds Corretos main: 3 de 3 / Nota 10.00
  - Resultados Corretos matrix_utils: 3 de 3 / Nota 10.00
  - Valgrinds Corretos matrix_utils: 3 de 3 / Nota 10.00
- - Resultados Corretos completo: 0 de 3 / Nota 0.00
- - Valgrinds Corretos completo: 1 de 3 / Nota 3.33
- - Soma das notas do Eduardo: 56.660
+ - Resultados Corretos completo: 3 de 3 / Nota 10.00
+ - Valgrinds Corretos completo: 3 de 3 / Nota 10.00
+ - Soma das notas do Eduardo: 90.000
  - Campos Considerados: 9
- - Média do Eduardo: 6.29
+ - Média do Eduardo: 10.00
 
 ----------------------------------------------------------------------------
 
